@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Project Demo
 
-[Click here to watch the video](./strategywerks-demo.gif)
+![Click here to watch the video](strategywerks-demo.gif)
 
 ## How to run locally ?
 
