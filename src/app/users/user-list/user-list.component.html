@@ -5,8 +5,8 @@
     </header>
 
     <cdk-virtual-scroll-viewport class="user-list" itemSize="100" (scrolledIndexChange)="onScroll()">
-        <app-user-item *cdkVirtualFor="let user of users; trackBy: trackById" class="user-item"
-            [user]="user"></app-user-item>
+        <app-user-item *cdkVirtualFor="let user of users; trackBy: trackById" class="user-item" [user]="user"
+            tabindex="0"></app-user-item>
     </cdk-virtual-scroll-viewport>
 
     <div *ngIf="isLoading" class="loading">
