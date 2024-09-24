@@ -1,0 +1,26 @@
+<mat-card class="user-card mat-elevation-z5">
+    <mat-card-header>
+        <strong>id:</strong> {{user?.id}}
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <div class="details">
+            <div class="detail">
+                <strong>FirstName:</strong>
+                <span>{{user?.firstName}}</span>
+            </div>
+            <div class="detail">
+                <strong>LastName:</strong>
+                <span>{{user?.lastName}}</span>
+            </div>
+            <div class="detail">
+                <strong>Email:</strong>
+                <span>{{user?.email}}</span>
+            </div>
+            <div class="detail">
+                <strong>Child:</strong>
+                <span>{{user?.children?.firstName + ' ' + user?.children?.lastName}}</span>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

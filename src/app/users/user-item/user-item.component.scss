@@ -1,0 +1,56 @@
+mat-card {
+    margin: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+    mat-divider {
+        // color: rgb(196, 196, 196);
+        border: none;
+        height: 2px !important;
+        background-image: linear-gradient(to right, #ff3402, #4a15dd);
+    }
+
+    mat-card-content {
+        margin-top: 12px;
+        .details {
+            display: flex;
+            justify-content: space-between;
+
+            .detail {
+                display: flex;
+                flex-direction: column;
+                strong {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 599px) {
+    mat-card {
+        mat-card-content {
+            .details {
+                flex-direction: row;
+                .detail {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+  
+}
+
+@media screen and (max-width: 1024px) {
+    mat-card {
+        mat-card-content {
+            .details {
+                flex-direction: column;
+                .detail {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+  
+}

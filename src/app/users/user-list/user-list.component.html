@@ -1,0 +1,16 @@
+<div class="container">
+    <header>
+        <h1>Users</h1>
+        <em class="user-count">Displaying {{users.length}} of {{totalUserCount}} users</em>
+    </header>
+
+    <cdk-virtual-scroll-viewport class="user-list" itemSize="100" (scrolledIndexChange)="onScroll()">
+        <app-user-item *cdkVirtualFor="let user of users; trackBy: trackById" class="user-item"
+            [user]="user"></app-user-item>
+    </cdk-virtual-scroll-viewport>
+
+    <div *ngIf="isLoading" class="loading">
+        <strong>Loading...</strong>
+    </div>
+
+</div>
